@@ -8,6 +8,11 @@ function createMainWIndow() {
         title: 'My Electron App',
         width: 800,
         height: 600,
+        webPreferences: {
+            nodeIntegration: true, // Enable Node.js integration
+            contextIsolation: true, // This is important for using Node.js in the renderer process
+            preload: path.join(__dirname, 'preload.js') // Ensure you have a preload script if needed
+        }
 
         
     });
