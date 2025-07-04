@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/anmol52490/Electron-APP#readme",
   "dependencies": {
-    "electron": "^37.2.0",
-    "react-router-dom": "^7.6.3"
+    "electron": "^37.2.0"
   }
 }

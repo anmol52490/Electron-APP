@@ -9,8 +9,8 @@ function createMainWIndow() {
         width: 800,
         height: 600,
         webPreferences: {
-            nodeIntegration: true, // Enable Node.js integration
-            contextIsolation: true, // This is important for using Node.js in the renderer process
+            nodeIntegration: true, // Disable Node.js integration for security
+            contextIsolation: true, // Enable context isolation for security
             preload: path.join(__dirname, 'preload.js') // Ensure you have a preload script if needed
         }
 
