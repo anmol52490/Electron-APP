@@ -1,5 +1,6 @@
 const {app, BrowserWindow } = require('electron');
 const path = require('path');
+const { start } = require('repl');
 const url = require('url');
 
 function createMainWIndow() {
@@ -19,7 +20,7 @@ function createMainWIndow() {
         slashes: true
     })
 
-    mainWindow.loadURL(startURL);
+    mainWindow.loadURL('http://localhost:3000/');
 
 }
 
